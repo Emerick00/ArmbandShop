@@ -75,21 +75,21 @@ export default function HomePage() {
 
   const reviews = [
     {
-      name: 'Sophie M.',
+      name: 'Lisa M.',
       rating: 5,
-      text: 'Qualité exceptionnelle. La gravure est parfaite et le bracelet est magnifique. Service client impeccable.',
+      text: 'Absolut perfektes Geschenk! Die Gravur ist wunderschön gestochen und das Leder fühlt sich hochwertig an. Mein Mann trägt es jeden Tag!',
       date: '15.01.2025'
     },
     {
       name: 'Thomas B.',
       rating: 5,
-      text: 'Très satisfait de mon achat. Le rendu est élégant et la finition soignée. Je recommande vivement.',
+      text: 'Sehr zufrieden mit der Qualität. Die Lieferung kam wie versprochen in 3 Tagen an. Gravur ist präzise und elegant. Klare Kaufempfehlung!',
       date: '12.01.2025'
     },
     {
-      name: 'Marie K.',
+      name: 'Sarah K.',
       rating: 5,
-      text: 'Un cadeau parfait et personnalisé. Livraison rapide et emballage soigné. Excellent rapport qualité-prix.',
+      text: 'Toller Service und wunderschönes Armband. Die Personalisierung macht es zu einem einzigartigen Geschenk. Würde hier wieder bestellen!',
       date: '08.01.2025'
     }
   ];
