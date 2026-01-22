@@ -49,7 +49,7 @@ export default function HomePage() {
   const products = [
     {
       id: 1,
-      name: 'Bracelet Personnalisé Homme',
+      name: 'Personalisiertes Herren Armband',
       image: 'https://images.unsplash.com/photo-1625417255685-9889e8dd94d2?w=600',
       price: 0.99,
       originalPrice: 36.99,
@@ -57,19 +57,19 @@ export default function HomePage() {
     },
     {
       id: 2,
-      name: 'Ensemble Bracelet Couple',
+      name: 'Paar-Armband Set',
       image: 'https://images.unsplash.com/photo-1640551855927-78d8ce33c586?w=600',
       price: 19.99,
       originalPrice: 59.99,
-      badge: 'POPULAIRE'
+      badge: 'BELIEBT'
     },
     {
       id: 3,
-      name: 'Chaîne Acier avec Gravure',
+      name: 'Edelstahl Kette mit Gravur',
       image: 'https://images.unsplash.com/photo-1704536917568-af87f9a87312?w=600',
       price: 24.99,
       originalPrice: 49.99,
-      badge: 'NOUVEAU'
+      badge: 'NEU'
     }
   ];
 
