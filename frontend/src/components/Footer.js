@@ -4,91 +4,95 @@ import { Link } from 'react-router-dom';
 export default function Footer() {
   return (
     <footer style={{
-      background: '#1A1A1A',
+      background: '#0A0E27',
       color: 'white',
-      padding: '60px 20px 30px',
-      marginTop: '80px'
+      padding: '80px 20px 40px',
+      marginTop: '100px'
     }}>
-      <div className="container" style={{
-        maxWidth: '1200px',
-        margin: '0 auto'
-      }}>
+      <div className="container">
         <div style={{
           display: 'grid',
           gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))',
-          gap: '40px',
-          marginBottom: '40px'
+          gap: '60px',
+          marginBottom: '60px'
         }}>
           <div>
             <h3 style={{
-              fontSize: '24px',
-              marginBottom: '20px',
-              fontFamily: 'Playfair Display, serif'
-            }}>❤️ ArmbandShop</h3>
-            <p style={{ opacity: 0.8, lineHeight: '1.6' }}>
-              Premium personalisierte Armbänder für Männer mit Gravur. 
-              Perfekte Geschenke für jeden Anlass.
+              fontSize: '20px',
+              marginBottom: '24px',
+              fontFamily: 'Cormorant Garamond, serif',
+              fontWeight: '600',
+              letterSpacing: '1px'
+            }}>ATELIER<span className="gold-text">GRAVURE</span></h3>
+            <p style={{ opacity: 0.7, lineHeight: '1.8', fontSize: '14px' }}>
+              Création artisanale de bracelets personnalisés.
+              Chaque pièce est unique et gravée avec précision.
             </p>
           </div>
           
           <div>
-            <h4 style={{ marginBottom: '20px', fontSize: '18px' }}>Schnelllinks</h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <Link to="/" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>Home</Link>
-              <Link to="/produkt" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>Produkt</Link>
-              <Link to="/ueber-uns" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>Über uns</Link>
-              <Link to="/kontakt" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>Kontakt</Link>
+            <h4 style={{ marginBottom: '24px', fontSize: '14px', letterSpacing: '1.5px', textTransform: 'uppercase', fontWeight: '500' }}>Navigation</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <Link to="/" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>Accueil</Link>
+              <Link to="/produkt" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>Produits</Link>
+              <Link to="/ueber-uns" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>À Propos</Link>
+              <Link to="/kontakt" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>Contact</Link>
             </div>
           </div>
           
           <div>
-            <h4 style={{ marginBottom: '20px', fontSize: '18px' }}>Rechtliches</h4>
-            <div style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
-              <Link to="/impressum" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>Impressum</Link>
-              <Link to="/agb" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>AGB</Link>
-              <Link to="/datenschutz" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>Datenschutz</Link>
-              <Link to="/faq" style={{ color: 'white', opacity: 0.8, textDecoration: 'none' }}>FAQ</Link>
+            <h4 style={{ marginBottom: '24px', fontSize: '14px', letterSpacing: '1.5px', textTransform: 'uppercase', fontWeight: '500' }}>Légal</h4>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+              <Link to="/impressum" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>Mentions Légales</Link>
+              <Link to="/agb" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>CGV</Link>
+              <Link to="/datenschutz" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>Confidentialité</Link>
+              <Link to="/faq" style={{ color: 'white', opacity: 0.7, textDecoration: 'none', fontSize: '14px', transition: 'opacity 0.3s' }}>FAQ</Link>
             </div>
           </div>
           
           <div>
-            <h4 style={{ marginBottom: '20px', fontSize: '18px' }}>Zahlungsmethoden</h4>
+            <h4 style={{ marginBottom: '24px', fontSize: '14px', letterSpacing: '1.5px', textTransform: 'uppercase', fontWeight: '500' }}>Paiement</h4>
             <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
               <div style={{
                 background: 'white',
                 padding: '8px 16px',
-                borderRadius: '6px',
-                fontSize: '12px',
-                color: '#1A1A1A',
-                fontWeight: '600'
-              }}>PayPal</div>
+                borderRadius: '0',
+                fontSize: '11px',
+                color: '#0A0E27',
+                fontWeight: '600',
+                letterSpacing: '0.5px'
+              }}>PAYPAL</div>
               <div style={{
                 background: 'white',
                 padding: '8px 16px',
-                borderRadius: '6px',
-                fontSize: '12px',
-                color: '#1A1A1A',
-                fontWeight: '600'
-              }}>Klarna</div>
+                borderRadius: '0',
+                fontSize: '11px',
+                color: '#0A0E27',
+                fontWeight: '600',
+                letterSpacing: '0.5px'
+              }}>KLARNA</div>
               <div style={{
                 background: 'white',
                 padding: '8px 16px',
-                borderRadius: '6px',
-                fontSize: '12px',
-                color: '#1A1A1A',
-                fontWeight: '600'
-              }}>Visa</div>
+                borderRadius: '0',
+                fontSize: '11px',
+                color: '#0A0E27',
+                fontWeight: '600',
+                letterSpacing: '0.5px'
+              }}>VISA</div>
             </div>
           </div>
         </div>
         
         <div style={{
           borderTop: '1px solid rgba(255,255,255,0.1)',
-          paddingTop: '30px',
+          paddingTop: '32px',
           textAlign: 'center',
-          opacity: 0.7
+          opacity: 0.6,
+          fontSize: '13px',
+          letterSpacing: '0.5px'
         }}>
-          <p>© 2025 ArmbandShop. Alle Rechte vorbehalten. | Versand innerhalb Deutschlands 2-4 Werktage</p>
+          <p>© 2025 AtelierGravure. Tous droits réservés. | Livraison France 2-4 jours ouvrables</p>
         </div>
       </div>
     </footer>

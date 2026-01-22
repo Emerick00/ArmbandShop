@@ -21,58 +21,57 @@ export default function Navbar() {
     <nav style={{
       position: 'sticky',
       top: 0,
-      background: 'white',
-      boxShadow: '0 2px 10px rgba(0,0,0,0.1)',
+      background: 'rgba(255, 255, 255, 0.98)',
+      backdropFilter: 'blur(8px)',
+      borderBottom: '1px solid #E2E8F0',
       zIndex: 100,
-      padding: '20px 0'
+      padding: '24px 0'
     }}>
       <div className="container" style={{
         display: 'flex',
         justifyContent: 'space-between',
-        alignItems: 'center',
-        maxWidth: '1200px',
-        margin: '0 auto',
-        padding: '0 20px'
+        alignItems: 'center'
       }}>
         <Link to="/" style={{
-          fontSize: '28px',
-          fontWeight: '800',
-          color: '#1A1A1A',
+          fontSize: '20px',
+          fontWeight: '600',
+          color: '#0A0E27',
           textDecoration: 'none',
-          fontFamily: 'Playfair Display, serif'
+          fontFamily: 'Cormorant Garamond, serif',
+          letterSpacing: '1px'
         }}>
-          ❤️ Armband<span className="gold-text">Shop</span>
+          ATELIER<span className="gold-text">GRAVURE</span>
         </Link>
         
-        <div style={{ display: 'flex', gap: '30px', alignItems: 'center' }}>
-          <Link to="/" className="nav-link">Home</Link>
-          <Link to="/produkt" className="nav-link">Produkt</Link>
-          <Link to="/ueber-uns" className="nav-link">Über uns</Link>
-          <Link to="/kontakt" className="nav-link">Kontakt</Link>
+        <div style={{ display: 'flex', gap: '40px', alignItems: 'center' }}>
+          <Link to="/" className="nav-link">Accueil</Link>
+          <Link to="/produkt" className="nav-link">Produits</Link>
+          <Link to="/ueber-uns" className="nav-link">À Propos</Link>
+          <Link to="/kontakt" className="nav-link">Contact</Link>
           <Link to="/faq" className="nav-link">FAQ</Link>
           <Link to="/warenkorb" style={{
             position: 'relative',
             display: 'flex',
             alignItems: 'center',
             textDecoration: 'none',
-            color: '#1A1A1A'
+            color: '#0A0E27'
           }}>
-            <ShoppingCart size={24} />
+            <ShoppingCart size={22} strokeWidth={1.5} />
             {cartCount > 0 && (
               <span style={{
                 position: 'absolute',
                 top: '-8px',
                 right: '-8px',
-                background: '#FF4500',
+                background: '#C9A95A',
                 color: 'white',
                 borderRadius: '50%',
-                width: '20px',
-                height: '20px',
+                width: '18px',
+                height: '18px',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                fontSize: '12px',
-                fontWeight: '700'
+                fontSize: '11px',
+                fontWeight: '600'
               }}>
                 {cartCount}
               </span>
