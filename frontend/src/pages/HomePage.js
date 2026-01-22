@@ -95,7 +95,7 @@ export default function HomePage() {
   ];
 
   return (
-    <div data-testid=\"homepage\" style={{ background: '#FAFBFC' }}>
+    <div data-testid="homepage" style={{ background: '#FAFBFC' }}>
       <Navbar />
       
       {/* Hero Section */}
