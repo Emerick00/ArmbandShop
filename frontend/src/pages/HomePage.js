@@ -99,17 +99,17 @@ export default function HomePage() {
       <Navbar />
       
       {/* Hero Section */}
-      <section className=\"hero-section\" data-testid=\"hero-section\">
-        <div className=\"container\" style={{ textAlign: 'center' }}>
+      <section className="hero-section" data-testid="hero-section">
+        <div className="container" style={{ textAlign: 'center' }}>
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
-            <div className=\"badge\" style={{ marginBottom: '30px' }}>LIMITIERTE EDITION</div>
+            <div className="badge" style={{ marginBottom: '30px' }}>LIMITIERTE EDITION</div>
             <h1 style={{
               fontSize: 'clamp(42px, 6vw, 68px)',
               fontWeight: '600',
               marginBottom: '24px',
               lineHeight: '1.1',
               letterSpacing: '-0.02em'
-            }} data-testid=\"hero-title\">
+            }} data-testid="hero-title">
               Personalisiertes Armband<br />für Männer mit Gravur
             </h1>
             <div className=\"divider\"></div>
