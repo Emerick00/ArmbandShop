@@ -112,7 +112,7 @@ export default function HomePage() {
             }} data-testid="hero-title">
               Personalisiertes Armband<br />für Männer mit Gravur
             </h1>
-            <div className=\"divider\"></div>
+            <div className='divider'></div>
             <p style={{
               fontSize: 'clamp(16px, 2vw, 20px)',
               marginBottom: '50px',
@@ -120,7 +120,7 @@ export default function HomePage() {
               fontWeight: '400',
               letterSpacing: '0.3px',
               lineHeight: '1.8'
-            }} data-testid=\"hero-subtitle\">
+            }} data-testid='hero-subtitle'>
               Handgefertigte Armbänder aus echtem Leder • Lasergravur in 24 Stunden<br/>
               Versandkostenfrei in Deutschland • 30 Tage Rückgaberecht
             </p>
@@ -149,7 +149,7 @@ export default function HomePage() {
                     background: 'linear-gradient(135deg, #D4A574 0%, #2D5F7F 100%)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent'
-                  }} data-testid=\"hero-price\">€0,99</span>
+                  }} data-testid='hero-price'>€0,99</span>
                 </div>
                 <div style={{ color: '#EF4444', fontSize: '15px', letterSpacing: '0.5px', fontWeight: '600' }}>
                   🎁 NEUKUNDEN-ANGEBOT • SPAREN SIE 89%
@@ -159,16 +159,16 @@ export default function HomePage() {
             
             <div style={{ display: 'flex', gap: '20px', justifyContent: 'center', flexWrap: 'wrap', marginBottom: '40px' }}>
               <button 
-                className=\"btn-primary\" 
+                className='btn-primary' 
                 onClick={() => navigate('/produkt')}
-                data-testid=\"cta-gravieren-button\"
+                data-testid='cta-gravieren-button'
               >
                 JETZT PERSONALISIEREN
               </button>
               <button 
-                className=\"btn-secondary\" 
+                className='btn-secondary' 
                 onClick={() => document.getElementById('products').scrollIntoView({ behavior: 'smooth' })}
-                data-testid=\"bestseller-button\"
+                data-testid='bestseller-button'
               >
                 KOLLEKTION ANSEHEN
               </button>
@@ -189,8 +189,8 @@ export default function HomePage() {
       </section>
 
       {/* Countdown Timer */}
-      <div className=\"container\" data-testid=\"countdown-timer\">
-        <div className=\"countdown-timer\">
+      <div className='container' data-testid='countdown-timer'>
+        <div className='countdown-timer'>
           <Clock size={22} style={{ display: 'inline-block', marginRight: '12px', verticalAlign: 'middle' }} />
           ANGEBOT ENDET IN: {String(timeLeft.hours).padStart(2, '0')}:{String(timeLeft.minutes).padStart(2, '0')}:{String(timeLeft.seconds).padStart(2, '0')}
         </div>
@@ -198,14 +198,14 @@ export default function HomePage() {
 
       {/* Wie funktioniert es Section */}
       <section style={{ padding: '100px 20px', background: 'white' }}>
-        <div className=\"container\">
+        <div className='container'>
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
             <h2 style={{
               fontSize: 'clamp(36px, 5vw, 48px)',
               fontWeight: '600',
               marginBottom: '20px'
             }}>So einfach funktioniert's</h2>
-            <div className=\"divider\"></div>
+            <div className='divider'></div>
             <p style={{ color: '#6B7280', fontSize: '16px', maxWidth: '700px', margin: '20px auto 0' }}>
               Ihr personalisiertes Armband in nur 4 einfachen Schritten
             </p>
@@ -304,32 +304,32 @@ export default function HomePage() {
       </section>
 
       {/* Trust Section */}
-      <section style={{ padding: '80px 20px', background: '#F3F4F6' }} data-testid=\"trust-section\">
-        <div className=\"container\">
+      <section style={{ padding: '80px 20px', background: '#F3F4F6' }} data-testid='trust-section'>
+        <div className='container'>
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
             gap: '30px'
           }}>
-            <div className=\"trust-badge\" style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
-              <Star className=\"gold-text\" size={36} style={{ marginBottom: '16px' }} />
+            <div className='trust-badge' style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
+              <Star className='gold-text' size={36} style={{ marginBottom: '16px' }} />
               <div style={{ fontSize: '15px', fontWeight: '600', marginBottom: '8px', letterSpacing: '0.5px' }}>4,8/5 STERNE</div>
               <div style={{ fontSize: '13px', color: '#6B7280', lineHeight: '1.6' }}>Über 385 begeisterte Kunden bewerten uns mit Bestnoten</div>
             </div>
             
-            <div className=\"trust-badge\" style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
+            <div className='trust-badge' style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
               <Truck size={36} style={{ marginBottom: '16px', color: '#2D5F7F' }} />
               <div style={{ fontSize: '15px', fontWeight: '600', marginBottom: '8px', letterSpacing: '0.5px' }}>KOSTENLOSER VERSAND</div>
               <div style={{ fontSize: '13px', color: '#6B7280', lineHeight: '1.6' }}>Versandkostenfrei innerhalb Deutschlands mit DHL</div>
             </div>
             
-            <div className=\"trust-badge\" style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
+            <div className='trust-badge' style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
               <Shield size={36} style={{ marginBottom: '16px', color: '#2D5F7F' }} />
               <div style={{ fontSize: '15px', fontWeight: '600', marginBottom: '8px', letterSpacing: '0.5px' }}>30 TAGE RÜCKGABERECHT</div>
               <div style={{ fontSize: '13px', color: '#6B7280', lineHeight: '1.6' }}>Nicht zufrieden? Geld zurück – ohne Wenn und Aber</div>
             </div>
             
-            <div className=\"trust-badge\" style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
+            <div className='trust-badge' style={{ flexDirection: 'column', padding: '32px', textAlign: 'center', height: '100%' }}>
               <Award size={36} style={{ marginBottom: '16px', color: '#2D5F7F' }} />
               <div style={{ fontSize: '15px', fontWeight: '600', marginBottom: '8px', letterSpacing: '0.5px' }}>DEUTSCHE QUALITÄT</div>
               <div style={{ fontSize: '13px', color: '#6B7280', lineHeight: '1.6' }}>Handgefertigt in Deutschland mit Premium-Materialien</div>
@@ -340,18 +340,18 @@ export default function HomePage() {
 
       {/* Lieferung Section */}
       <section style={{ padding: '100px 20px', background: 'white' }}>
-        <div className=\"container\">
+        <div className='container'>
           <div style={{ maxWidth: '900px', margin: '0 auto' }}>
             <div style={{ textAlign: 'center', marginBottom: '60px' }}>
               <h2 style={{ fontSize: 'clamp(36px, 5vw, 48px)', fontWeight: '600', marginBottom: '20px' }}>
                 Versand & Lieferung
               </h2>
-              <div className=\"divider\"></div>
+              <div className='divider'></div>
             </div>
 
-            <div className=\"info-box\" style={{ marginBottom: '30px' }}>
+            <div className='info-box' style={{ marginBottom: '30px' }}>
               <div style={{ display: 'flex', alignItems: 'start', gap: '16px' }}>
-                <Package size={32} className=\"blue-text\" style={{ flexShrink: 0, marginTop: '4px' }} />
+                <Package size={32} className='blue-text' style={{ flexShrink: 0, marginTop: '4px' }} />
                 <div>
                   <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
                     Wie lange dauert die Gravur?
@@ -365,9 +365,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className=\"info-box\" style={{ marginBottom: '30px' }}>
+            <div className='info-box' style={{ marginBottom: '30px' }}>
               <div style={{ display: 'flex', alignItems: 'start', gap: '16px' }}>
-                <Truck size={32} className=\"blue-text\" style={{ flexShrink: 0, marginTop: '4px' }} />
+                <Truck size={32} className='blue-text' style={{ flexShrink: 0, marginTop: '4px' }} />
                 <div>
                   <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
                     Wie wird versendet?
@@ -385,9 +385,9 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className=\"info-box\">
+            <div className='info-box'>
               <div style={{ display: 'flex', alignItems: 'start', gap: '16px' }}>
-                <Clock size={32} className=\"blue-text\" style={{ flexShrink: 0, marginTop: '4px' }} />
+                <Clock size={32} className='blue-text' style={{ flexShrink: 0, marginTop: '4px' }} />
                 <div>
                   <h4 style={{ fontSize: '18px', fontWeight: '600', marginBottom: '12px' }}>
                     Wann kommt mein Paket an?
@@ -406,25 +406,25 @@ export default function HomePage() {
       </section>
 
       {/* Products Grid */}
-      <section id=\"products\" className=\"section-padding\" data-testid=\"products-section\" style={{ background: '#F3F4F6' }}>
-        <div className=\"container\">
+      <section id='products' className='section-padding' data-testid='products-section' style={{ background: '#F3F4F6' }}>
+        <div className='container'>
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
             <h2 style={{
               fontSize: 'clamp(36px, 5vw, 52px)',
               fontWeight: '600',
               marginBottom: '20px'
             }}>Unsere Bestseller</h2>
-            <div className=\"divider\"></div>
+            <div className='divider'></div>
             <p style={{ color: '#6B7280', fontSize: '16px', maxWidth: '600px', margin: '20px auto 0' }}>
               Jedes Armband wird mit Liebe handgefertigt und mit Laserpräzision graviert
             </p>
           </div>
           
-          <div className=\"grid-3\">
+          <div className='grid-3'>
             {products.map(product => (
               <div 
                 key={product.id} 
-                className=\"product-card\"
+                className='product-card'
                 onClick={() => navigate('/produkt')}
                 data-testid={`product-card-${product.id}`}
               >
@@ -435,13 +435,13 @@ export default function HomePage() {
                     top: '20px',
                     right: '20px'
                   }}>
-                    <div className=\"badge\">{product.badge}</div>
+                    <div className='badge'>{product.badge}</div>
                   </div>
                 </div>
                 <div style={{ padding: '32px' }}>
                   <h3 style={{ fontSize: '22px', marginBottom: '16px', fontWeight: '600' }}>{product.name}</h3>
                   <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '20px' }}>
-                    <span className=\"star-rating\" style={{ fontSize: '18px' }}>★★★★★</span>
+                    <span className='star-rating' style={{ fontSize: '18px' }}>★★★★★</span>
                     <span style={{ color: '#6B7280', fontSize: '14px', fontWeight: '500' }}>(4,8)</span>
                   </div>
                   <div style={{ marginBottom: '24px' }}>
@@ -459,7 +459,7 @@ export default function HomePage() {
                       fontSize: '18px'
                     }}>€{product.originalPrice}</span>
                   </div>
-                  <button className=\"btn-secondary\" style={{ width: '100%' }}>
+                  <button className='btn-secondary' style={{ width: '100%' }}>
                     Produkt Ansehen
                   </button>
                 </div>
@@ -469,25 +469,25 @@ export default function HomePage() {
       </section>
 
       {/* Reviews Section */}
-      <section style={{ padding: '100px 20px', background: 'white' }} data-testid=\"reviews-section\">
-        <div className=\"container\">
+      <section style={{ padding: '100px 20px', background: 'white' }} data-testid='reviews-section'>
+        <div className='container'>
           <div style={{ textAlign: 'center', marginBottom: '70px' }}>
             <h2 style={{
               fontSize: 'clamp(36px, 5vw, 52px)',
               fontWeight: '600',
               marginBottom: '20px'
             }}>Das sagen unsere Kunden</h2>
-            <div className=\"divider\"></div>
+            <div className='divider'></div>
             <p style={{ color: '#6B7280', fontSize: '16px' }}>
               Über 10.000 zufriedene Kunden vertrauen auf unsere Qualität
             </p>
           </div>
           
-          <div className=\"grid-3\">
+          <div className='grid-3'>
             {reviews.map((review, index) => (
-              <div key={index} className=\"review-card\" data-testid={`review-card-${index}`}>
+              <div key={index} className='review-card' data-testid={`review-card-${index}`}>
                 <div style={{ marginBottom: '20px' }}>
-                  <div className=\"star-rating\" style={{ fontSize: '22px', marginBottom: '16px', letterSpacing: '3px' }}>
+                  <div className='star-rating' style={{ fontSize: '22px', marginBottom: '16px', letterSpacing: '3px' }}>
                     {'★'.repeat(review.rating)}
                   </div>
                   <div style={{ fontWeight: '600', fontSize: '16px', marginBottom: '4px' }}>{review.name}</div>
@@ -499,7 +499,7 @@ export default function HomePage() {
           </div>
 
           <div style={{ textAlign: 'center', marginTop: '60px' }}>
-            <div className=\"success-badge\">
+            <div className='success-badge'>
               ✓ VERIFIZIERTE KÄUFE • 385 ECHTE BEWERTUNGEN
             </div>
           </div>
@@ -507,25 +507,25 @@ export default function HomePage() {
       </section>
 
       {/* Exit Intent Popup */}
-      <div className={`exit-popup ${showExitPopup ? 'active' : ''}`} onClick={() => setShowExitPopup(false)} data-testid=\"exit-popup\">
-        <div className=\"popup-content\" onClick={(e) => e.stopPropagation()}>
+      <div className={`exit-popup ${showExitPopup ? 'active' : ''}`} onClick={() => setShowExitPopup(false)} data-testid='exit-popup'>
+        <div className='popup-content' onClick={(e) => e.stopPropagation()}>
           <h2 style={{
             fontSize: '42px',
             marginBottom: '20px',
             fontWeight: '600'
           }}>Warten Sie!</h2>
-          <div className=\"divider\"></div>
+          <div className='divider'></div>
           <p style={{ fontSize: '18px', marginBottom: '40px', color: '#6B7280', lineHeight: '1.7' }}>
             Sichern Sie sich <span style={{ color: '#EF4444', fontWeight: '700' }}>10% EXTRA-RABATT</span><br/>
             auf Ihre erste Bestellung
           </p>
           <button 
-            className=\"btn-gold\" 
+            className='btn-gold' 
             onClick={() => {
               setShowExitPopup(false);
               navigate('/produkt');
             }}
-            data-testid=\"popup-claim-button\"
+            data-testid='popup-claim-button'
           >
             Rabatt Sichern
           </button>
@@ -540,7 +540,7 @@ export default function HomePage() {
               textDecoration: 'underline'
             }}
             onClick={() => setShowExitPopup(false)}
-            data-testid=\"popup-close-button\"
+            data-testid='popup-close-button'
           >
             Nein danke
           </button>
